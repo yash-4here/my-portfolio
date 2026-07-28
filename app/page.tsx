@@ -1,65 +1,89 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-slate-950 px-6 py-24 text-white">
+      <nav className="mb-16 flex w-full max-w-xl flex-col gap-5 text-sm sm:mb-24 sm:flex-row sm:items-center sm:justify-between">
+        <span className="font-semibold text-sky-300">INBUILTCUTS</span>
+
+          <div className="flex gap-5 text-slate-300">
+            <a className="transition hover:text-white" href="#about">
+             About
+               </a>
+               <a className="transition hover:text-white" href="#projects">
+                Projects
+              </a>
+              <a className="transition hover:text-white" href="#contact">
+              Contact
+              </a>
+          </div>
+     </nav>
+      <p className="text-sm font-semibold tracking-[0.2em] text-sky-300">
+        PORTFOLIO
+      </p>
+
+      <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+        Hi, I&apos;m Yash Vardhan.
+      </h1>
+
+      <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+        I&apos;m an editor and a beginner web developer learning to build my portfolio with useful, thoughtful
+        tools.
+      </p>
+      <section
+        id="about"
+        className="mt-16 max-w-xl rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <h2 className="text-2xl font-semibold">About me</h2>
+
+        <p className="mt-4 leading-7 text-slate-300">
+        I enjoy learning how websites work and turning ideas into simple, useful
+        experiences.
+        </p>
+       </section>
+     <section
+        id="projects"
+        className="mt-16 max-w-xl">
+         <h2 className="text-2xl font-semibold">Projects</h2>
+
+          <article className="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+         <p className="text-sm font-semibold tracking-[0.2em] text-sky-300">
+          PROJECT 01 · IN PROGRESS
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+          <h3 className="mt-3 text-xl font-semibold">
+           My Portfolio Website
+          </h3>
+
+            <p className="mt-3 leading-7 text-slate-300">
+             A personal website where I am learning to present my work, skills, and
+             progress as a developer.
+             </p>
+
+            <div className="mt-5 flex gap-3">
+            <span className="rounded-full bg-slate-800 px-3 py-1 text-sm">
+               Next.js
+            </span>
+            <span className="rounded-full bg-slate-800 px-3 py-1 text-sm">
+              Tailwind CSS
+             </span>
+              </div>
+         </article>
+       </section>
+        <section id="contact" className="mt-16 max-w-xl border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-semibold">Let&apos;s connect</h2>
+
+            <p className="mt-4 leading-7 text-slate-300">
+              For work related queries, feel free to reach out!
+            </p>
+
+              <a
+                className="mt-4 inline-block font-semibold text-sky-300 underline decoration-sky-300/40 underline-offset-4 transition hover:text-sky-200"
+                href="mailto:inbuilt.work1@gmail.com">
+
+                inbuilt.work1@gmail.com
+              </a>
+        </section>
+        <footer className="mt-20 max-w-xl border-t border-slate-800 py-8 text-sm text-slate-500">
+        © 2026 Yash Vardhan. All rights reserved.
+        </footer>
+    </main>
   );
 }

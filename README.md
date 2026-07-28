@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# INBUILTCUTS — Personal Portfolio
 
-## Getting Started
+This is my first personal portfolio website, created by **Yash Vardhan** — an editor beginning a new journey into web development.
 
-First, run the development server:
+## My Story
+
+I come from an editing background, where every project is about rhythm, clarity, emotion, and telling a story. Building this website gave me a new way to use that creative mindset: designing an experience for the web.
+
+I started with a blank Next.js project and built this portfolio step by step. Along the way, I learned how a page is structured, how Tailwind CSS can shape a design, how navigation works, and how a website becomes ready to share with the world.
+
+This project is not about pretending I already know everything. It is the starting point of my web development journey — a place to document my progress, share my work, and keep learning through real projects.
+
+## What This Portfolio Includes
+
+- A short introduction and personal story
+- A responsive navigation menu for desktop and mobile screens
+- An about section and first project card
+- A contact section for work-related questions
+- A clean, dark visual style inspired by focused creative work
+
+## Built With
+
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Run It Locally
+
+1. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+To check the production version before publishing, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What Comes Next
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is only the beginning. I plan to keep improving this portfolio by:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Adding more editing and web development projects
+- Sharing the creative process behind my work
+- Improving the design as my skills grow
+- Learning more about modern web development through practice
 
-## Learn More
+## A Note From Me
 
-To learn more about Next.js, take a look at the following resources:
+I built this as an editor stepping into a new creative space. Every new section, line of code, and improvement is part of learning how to turn ideas into useful digital experiences.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for visiting — this is where the journey starts.
